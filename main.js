@@ -12,6 +12,7 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false,
     },
+    icon: path.join(__dirname, 'flag_orange.png')
   });
 
   mainWindow.loadFile('index.html');
