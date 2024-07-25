@@ -11,5 +11,8 @@
     "font-awesome": "^4.7.0",
     "fs-extra": "^11.0.0",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.3"
   }
 }
