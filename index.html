@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level Manager</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="level-container">
+      <h2>Playable Levels</h2>
+      <div id="playableLevels" class="level-list"></div>
+    </div>
+    <div class="level-container">
+      <h2>Created Levels</h2>
+      <div id="createdLevels" class="level-list"></div>
+    </div>
+    <div class="install-container">
+      <button id="installLevelBtn" class="install-btn"><i class="fas fa-upload"></i> Install Level</button>
+    </div>
+  </div>
+  <div id="metadataModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Level Metadata</h2>
+      <div id="metadataContent"></div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

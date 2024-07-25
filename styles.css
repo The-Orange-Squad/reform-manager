@@ -1,0 +1,139 @@
+/* Import questrial with all weights */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #000;
+  }
+
+  * {
+    font-family: 'Sarabun', sans-serif;
+  }
+  
+  #app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .level-container {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #000080;
+    margin-top: 0;
+  }
+  
+  .level-list {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  
+  .level-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .level-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .level-actions {
+    display: flex;
+  }
+  
+  .level-actions button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000080;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  .edit-btn, .install-btn {
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .edit-btn:hover, .install-btn:hover {
+    background-color: #00005a;
+  }
+  
+  .install-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Metadata editor styling */
+  #editMetadataForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #editMetadataForm label {
+    margin-bottom: 10px;
+  }
+  
+  #editMetadataForm input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  #editMetadataForm button {
+    align-self: flex-start;
+    margin-top: 15px;
+  }
